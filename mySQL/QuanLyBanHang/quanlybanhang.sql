@@ -14,7 +14,7 @@ create table Orders
 	oID varchar(10) 	not null primary key,
     cID varchar(10) 	not null,
     oDate date 			not null,
-    oTtalPrice double 	not null, 
+    oTotalPrice double, 
     foreign key (cID) references customer(cID)
 );
 
