@@ -105,7 +105,7 @@ button{
     left:10%;
 }
 .inputText:valid{
-    border-bottom:1px solid #909fee;
+    border-bottom:3px solid orange;
 }
 input[type='checkbox'] + label{
     position: unset;
