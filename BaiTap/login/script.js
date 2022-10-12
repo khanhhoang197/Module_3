@@ -3,8 +3,6 @@ let form = document.getElementById('form');
 let bgactive = document.getElementById('bg-active');
 var rotatedeg = 0;
 
-
-
 options.forEach(val => {
     val.addEventListener('click', function(event){
         if(this.classList.contains('active')){
@@ -22,4 +20,31 @@ options.forEach(val => {
          rotatedeg = rotatedeg + 200;
          document.getElementById('rotate').style.transform = 'translate(-50%) rotate(' + rotatedeg + 'deg)';
     })
-})
+});
+
+function showPass() {
+    let x = document.getElementById("pass-login");
+    if (x.type == "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+    let y = document.querySelector(".fa-eye");
+    y.classList.toggle("fa-eye-slash")
+  };
+  function showPassReg1() {
+    let x = document.getElementById("pass-reg1");
+    if (x.type == "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  };
+  function showPassReg2() {
+    let x = document.getElementById("pass-reg2");
+    if (x.type == "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  };

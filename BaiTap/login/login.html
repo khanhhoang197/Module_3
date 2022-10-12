@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -14,15 +15,19 @@
             <div class="content">
                 <h1>Login</h1>
                 <div class="group">
+                    <i class="fa-solid fa-user"></i>
                     <input type="text" id="username-login" class="inputText" placeholder="&nbsp;" required>
                     <label for="username-login">Username</label>
                 </div>
                 <div class="group">
+                    <i class="fa-solid fa-lock"></i>
                     <input type="password" id="pass-login" class="inputText" placeholder="&nbsp;" required>
                     <label for="pass-login">Password</label>
+                    <i class="eye-icon fa-solid fa-eye" onclick="showPass()" id="eye"></i>
                 </div>
                 <div class="group">
-                    <input type="checkbox"> Save login
+                    <input type="checkbox"> <p>Ghi nhớ đăng nhập</p> 
+                    <a href="#">Quên mật khẩu</a>
                 </div>
                 <button>Login</button>
             </div>
@@ -31,19 +36,28 @@
             <div class="content">
                 <h1>Register</h1>
                 <div class="group">
+                    <i class="fa-solid fa-user"></i>
                     <input type="text" id="username-reg" class="inputText" placeholder="&nbsp;" required>
                     <label for="username-reg">Username</label>
                 </div>
                 <div class="group">
-                    <input type="password" id="email-reg" class="inputText" placeholder="&nbsp;" required>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" id="email-reg" class="inputText" placeholder="&nbsp;" required>
                     <label for="email-reg">Email</label>
                 </div>
                 <div class="group">
-                    <input type="password" id="pass-reg" class="inputText" placeholder="&nbsp;" required>
-                    <label for="pass-reg">Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="pass-reg1" class="inputText" placeholder="&nbsp;" required>
+                    <label for="pass-reg">Password </label>
+                    <i class="eye-icon fa-solid fa-eye" onclick="showPassReg1()" id="eye"></i>
+                    
                 </div>
                 <div class="group">
-                    <input type="checkbox"> Save login
+                      <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="pass-reg2" class="inputText" placeholder="&nbsp;" required>
+                    <label for="pass-reg">Confirm Password</label>
+                    <i class="eye-icon fa-solid fa-eye" onclick="showPassReg2()" id="eye"></i>
+                    
                 </div>
                 <button>Register</button>
             </div>
